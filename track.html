@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tracking</title>
+    <link rel="stylesheet" href="track.css">
+    <link rel="stylesheet" href="w.css">
+    <style>
+        /* Add this CSS to center the form */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        /* Add this CSS to align the navigation tabs to the right side */
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href=""><img src="women.png" height="50" width="50"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="self.html">SELF-SERVECE</a></li>
+                <li><a href="track.html">TRACKING</a></li>
+                <li><a href="table.html">HELP-LINE</a></li>
+            </ul>
+        </div>
+    </nav>
+    <center><p>TRACKING SPOT</p></center>
+    <header class="container">
+        <form>
+            <label for="name">USER NAME:</label>
+            <input type="text" placeholder="enter name" required><br>
+            <label for="START">START LOCATION</label>
+            <input type="text" placeholder="enter start location" required><br>
+            <label for="name">END LOCATION:</label>
+            <input type="text" placeholder="enter end location " required><br>
+            <label for="name" >EMERGENCY PH-NO1:</label>
+            <input type="tel" placeholder="enter phno1" max="10" min="10" required><br>
+            <label for="name">EMERGENCY PH-NO2:</label>
+            <input type="tel" placeholder="enter phno2" required><br>
+            <center><button >START TRACKING</button></center>
+        </form>
+    </header>
+</body>
+</html>
