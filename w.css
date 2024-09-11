@@ -1,0 +1,81 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.header{
+    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(women.webp);
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size:cover ;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+}
+nav img{
+    width: 100px;
+    height: 100;
+}
+.nav-links{
+    flex: 10;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block ;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fffdfd;
+    text-decoration: none;
+    font-size: 19px;  
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: rgb(253, 250, 250);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    background-color: #f40e0e;
+
+}
+.text-box{
+    width: 100%;
+    color: #f4f4f4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 20px;
+    color: #efecec;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links {
+        position: absolute;
+        background-color: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}

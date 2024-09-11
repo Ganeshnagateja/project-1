@@ -1,0 +1,74 @@
+body{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(image.png);
+    background-size: cover;
+    background-color: lightgray;
+    filter: contrast(-50%);
+}
+input{
+    text-align: center;
+    justify-content: center;
+    height: 5em;
+    width: 40em;
+    border-radius: 20px;
+}
+section {
+    position: absolute; /* Add this to position the section absolutely */
+    top: 50%; /* Move the section 50% from the top */
+    right: 15%; /* Move the section 15% from the right */
+    transform: translate(-50%, -50%); /* Adjust the position to center the section */
+    display: flex;
+    justify-content: center;
+    shape-outside: margin-box;
+}
+input:hover{
+    background-color: hsl(120, 0%, 51%);
+    transition: 1s;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+}
+nav img{
+    width: 100px;
+    height: 100;
+}
+.nav-links{
+    flex: 10;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block ;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #f6f5f5;
+    text-decoration: none;
+    font-size: 19px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #63f2b2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.text-box{
+    width: 100%;
+    color: #0a0a0a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+}
